@@ -5,6 +5,7 @@
 
 body {
     background: #e1e7ee;
+    width: 100%;
 }
 
 p {
@@ -15,4 +16,16 @@ p {
 h1,
 h2 {
     color: #888888;
+}
+
+.part,
+.input {
+    display: flex;
+}
+
+.input {
+    margin: auto;
+    flex: 1;
+    flex-basis: 50px;
+    flex-direction: column;
 }

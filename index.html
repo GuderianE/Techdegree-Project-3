@@ -17,57 +17,94 @@
 <main class="main-content">
     <form class="main-form" action="index.html" method="POST">
         <fieldset>
-            <label for="user_name">Full Name</label>
-            <input type="text" name="full_name" id="user_name">
-            <label for="user_email">Email</label>
-            <input type="email" name="email" id="user_email">
-            <label for="user_tel_number">Phone Number</label>
-            <input type="tel" name="tel_number" id="user_tel_number">
-            <label for="user_str_address">Street Address</label>
-            <input type="text" name="address" id="user_str_address">
-            <label for="user_city">City</label>
-            <input type="text" name="city" id="user_city">
-            <label for="user_state">State</label>
-            <select name="state" id="user_state">
-                <option value="no_state_selected">no state selected</option>
-                <option value="baden-wuerttenberg">Baden Württenberg</option>
-                <option value="bayern">Bayern</option>
-                <option value="berlin">Berlin</option>
-                <option value="brandenburg">Brandenburg</option>
-                <option value="bremen">Bremen</option>
-                <option value="hamburg">Hamburg</option>
-                <option value="hessen">Hessen</option>
-                <option value="niedersachsen">Niedersachsen</option>
-                <option value="mecklenburg-vorpommern">Mecklenburg Vorpommern</option>
-                <option value="nord-rhein-westfalen">Nord Rhein Westfalen</option>
-                <option value="rheinland-pfalz">Rheinland Pfalz</option>
-                <option value="saarland">Saarland</option>
-                <option value="sachsen">Sachsen</option>
-                <option value="sachsen-anhalt">Sachsen Anhalt</option>
-                <option value="schleswig-holstein">Schleswig Holstein</option>
-                <option value="thueringen">Thüringen</option>
-            </select>
-            <label for="user_zip_code">Zip Code</label>
-            <input type="number" name="zip_code" id="user_zip_code">
+            <div class="container">
+                <div class="input name">
+                <label for="user_name">Full Name</label>
+                <input type="text" name="full_name" id="user_name">
+                </div>
+                <div class="input email">
+                <label for="user_email">Email</label>
+                <input type="email" name="email" id="user_email">
+                </div>
+                <div class="input phone">
+                <label for="user_tel_number">Phone Number</label>
+                <input type="tel" name="tel_number" id="user_tel_number">
+                </div>
+                <div class="input address">
+                <label for="user_str_address">Street Address</label>
+                <input type="text" name="address" id="user_str_address">
+                </div>
+                <div class="input city">
+                <label for="user_city">City</label>
+                <input type="text" name="city" id="user_city">
+                </div>
+                <div class="input state">
+                <label for="user_state">State</label>
+                <select name="state" id="user_state">
+                    <option value="no_state_selected">no state selected</option>
+                    <option value="baden-wuerttenberg">Baden Württenberg</option>
+                    <option value="bayern">Bayern</option>
+                    <option value="berlin">Berlin</option>
+                    <option value="brandenburg">Brandenburg</option>
+                    <option value="bremen">Bremen</option>
+                    <option value="hamburg">Hamburg</option>
+                    <option value="hessen">Hessen</option>
+                    <option value="niedersachsen">Niedersachsen</option>
+                    <option value="mecklenburg-vorpommern">Mecklenburg Vorpommern</option>
+                    <option value="nord-rhein-westfalen">Nord Rhein Westfalen</option>
+                    <option value="rheinland-pfalz">Rheinland Pfalz</option>
+                    <option value="saarland">Saarland</option>
+                    <option value="sachsen">Sachsen</option>
+                    <option value="sachsen-anhalt">Sachsen Anhalt</option>
+                    <option value="schleswig-holstein">Schleswig Holstein</option>
+                    <option value="thueringen">Thüringen</option>
+                </select>
+                </div>
+                <div class="input zip">
+                <label for="user_zip_code">Zip Code</label>
+                <input type="text" name="zip_code" id="user_zip_code">
+                </div>
+            </div>
         </fieldset>
+        
+       
         <fieldset>
-            <h2>Newsletter</h2>
-            <p>Select the newsletter you would like to receive</p>
-            <label for="news_select">HTML News</label>
-            <input type="checkbox" name="news_select" id="html_news" value="html_news">
-            <label for="css_news">CSS News</label>
-            <input type="checkbox" name="news_select" id="css_news" value="css_news">
-            <label for="js_news">JavaScript News</label>
-            <input type="checkbox" name="news_select" id="js_news" value="js_news">
-            <p>Newsletter format</p>
-            <label for="html">HTML</label>
-            <input type="radio" name="select_type" id="html" value="html">
-            <label for="plain_text">Plain text</label>
-            <input type="radio" name="select_type" id="plain_text" value="plain_text">
-            <p>Other topics you like to hear about</p>
-            <textarea name="message"></textarea>
-            <input type="submit" name="signup" id="user_signup" value="user_signup">
+            <div class="container">
+            <div class="select-header">
+                <h2>Newsletter</h2>
+                <p>Select the newsletter you would like to receive</p>
+                </div>
+                <div class="input html">
+                <label for="news_select">HTML News</label>
+                <input type="checkbox" name="news_select" id="html_news" value="html_news">
+                </div>
+                <div class="input css">
+                <label for="css_news">CSS News</label>
+                <input type="checkbox" name="news_select" id="css_news" value="css_news">
+                </div>
+                <div class="input js">
+                <label for="js_news">JavaScript News</label>
+                <input type="checkbox" name="news_select" id="js_news" value="js_news">
+                </div>
+                <div class="format">
+                <p>Newsletter format</p>
+                </div>
+                <div class="input html1">
+                <label for="html">HTML</label>
+                <input type="radio" name="select_type" id="html" value="html">
+                </div>
+                <div class="input plain">
+                <label for="plain_text">Plain text</label>
+                <input type="radio" name="select_type" id="plain_text" value="plain_text">
+                </div>
+                <div class="textarea">
+                <p>Other topics you like to hear about</p>
+                <textarea name="message"></textarea>
+                </div>
+                <input type="submit" name="signup" id="user_signup" value="Signup">
+            </div>
         </fieldset>
+        
 
     </form>
 </main>
