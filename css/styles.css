@@ -19,13 +19,18 @@ h2 {
 }
 
 .part,
-.input {
+.input,
+.box {
     display: flex;
 }
 
 .input {
     margin: auto;
     flex: 1;
-    flex-basis: 50px;
     flex-direction: column;
+}
+
+.box {
+    flex-direction: row;
+    justify-content: flex-start;
 }
