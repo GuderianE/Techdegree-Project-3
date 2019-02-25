@@ -20,8 +20,9 @@ h2 {
 
 .intp-field,
 .label,
-.box-label,
-.box {
+input [type="radio"],
+input [type="checkbox"],
+label {
     display: flex;
 }
 
@@ -37,6 +38,17 @@ h2 {
     box-shadow: 2px 3px 5px rgba(3,3,3,15);
 }
 
-.box {
+form input [type= "radio"],
+input [type= "checkbox"] {
+    
     flex-direction: row;
+    justify-content: space-evenly;
 }
+
+.container1 label {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+    flex: 2 0 100px;
+}
+
