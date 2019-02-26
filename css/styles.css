@@ -13,6 +13,10 @@ p {
     color: #83da8a;
 }
 
+fieldset {
+    border: none;
+}
+
 h1,
 h2,
 legend {
@@ -26,16 +30,27 @@ legend {
     display: flex;
 }
 
+.main-header {
+    text-align: center;
+    border-bottom: solid 4px black;
+    margin-bottom: 20px;
+}
+
 .label {
     margin: 20px;
-    flex: 1;
     flex-direction: column;
     justify-content: space-between;
 }
 
 .inpt-field {
+    border: none;
     border-radius: 8px;
     box-shadow: 2px 3px 5px rgba(3,3,3,15);
+}
+
+.inpt-field:focus {
+    outline: none;
+    border: solid 3px #83da8a;
 }
 
 .box {
@@ -55,6 +70,11 @@ legend {
   margin-top: 2.5px;
 }
 
+.c-box,
+.r-box:hover {
+    border-color: #83da8a;
+}
+
 .main-footer {
     background: darkslategrey;
     color:#83da8a;  
@@ -63,5 +83,5 @@ legend {
     padding: 20px 0;
 }
 
-
+@media (min-width: 768px )
 
