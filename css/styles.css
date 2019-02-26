@@ -14,10 +14,12 @@ p {
 }
 
 h1,
-h2 {
+h2,
+legend {
     color: #888888;
 }
 
+.main-footer,
 .intp-field,
 .label,
 .box {
@@ -37,20 +39,28 @@ h2 {
 }
 
 .box {
+    padding: 5px 0;
     flex-basis: 50px;
+    justify-content: baseline;
   
 }
 
 .box-label {
-    flex-basis: 200px;
-    flex-wrap: nowrap;
-    justify-content: space-between;
+    margin-left: 10px;
+    vertical-align: center;
 }
 
-input [type="checkbox"],
-input [type="radio"] {
-    justify-self: center; 
-    margin: auto;
+.c-box,
+.r-box {
+  margin-top: 2.5px;
+}
+
+.main-footer {
+    background: darkslategrey;
+    color:#83da8a;  
+    width: 100%;
+    justify-content: center;
+    padding: 20px 0;
 }
 
 
