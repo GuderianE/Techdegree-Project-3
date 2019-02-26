@@ -19,50 +19,50 @@
         <fieldset>
             <div class="container">
                 <div class="label">
-                <label for="user_name">Full Name</label>
-                <input class="inpt-field" type="text" name="full_name" id="user_name" required>
+                    <label for="user_name">Full Name</label>
+                    <input class="inpt-field" type="text" name="full_name" id="user_name" required>
                 </div>
                 <div class="label">
-                <label for="user_email">Email</label>
-                <input class="inpt-field" type="email" name="email" id="user_email" required>
+                    <label for="user_email">Email</label>
+                    <input class="inpt-field" type="email" name="email" id="user_email" required>
                 </div>
                 <div class="label">
-                <label for="user_tel_number">Phone Number</label>
-                <input class="inpt-field" type="tel" name="tel_number" id="user_tel_number">
+                    <label for="user_tel_number">Phone Number</label>
+                    <input class="inpt-field" type="tel" name="tel_number" id="user_tel_number">
                 </div>
                 <div class="label">
-                <label for="user_str_address">Street Address</label>
-                <input class="inpt-field" type="text" name="address" id="user_str_address">
+                    <label for="user_str_address">Street Address</label>
+                    <input class="inpt-field" type="text" name="address" id="user_str_address">
                 </div>
                 <div class="label">
-                <label for="user_city">City</label>
-                <input class="inpt-field" type="text" name="city" id="user_city">
+                    <label for="user_city">City</label>
+                    <input class="inpt-field" type="text" name="city" id="user_city">
                 </div>
                 <div class="label">
-                <label for="user_state">State</label>
-                <select class="inpt-field" name="state" id="user_state">
-                    <option value="select_state">select state</option>   
-                    <option value="baden-wuerttenberg">Baden Württenberg</option>
-                    <option value="bayern">Bayern</option>
-                    <option value="berlin">Berlin</option>
-                    <option value="brandenburg">Brandenburg</option>
-                    <option value="bremen">Bremen</option>
-                    <option value="hamburg">Hamburg</option>
-                    <option value="hessen">Hessen</option>
-                    <option value="niedersachsen">Niedersachsen</option>
-                    <option value="mecklenburg-vorpommern">Mecklenburg Vorpommern</option>
-                    <option value="nord-rhein-westfalen">Nord Rhein Westfalen</option>
-                    <option value="rheinland-pfalz">Rheinland Pfalz</option>
-                    <option value="saarland">Saarland</option>
-                    <option value="sachsen">Sachsen</option>
-                    <option value="sachsen-anhalt">Sachsen Anhalt</option>
-                    <option value="schleswig-holstein">Schleswig Holstein</option>
-                    <option value="thueringen">Thüringen</option>
-                </select>
+                    <label for="user_state">State</label>
+                    <select class="inpt-field" name="state" id="user_state">
+                        <option value="select_state">select state</option>   
+                        <option value="baden-wuerttenberg">Baden Württenberg</option>
+                        <option value="bayern">Bayern</option>
+                        <option value="berlin">Berlin</option>
+                        <option value="brandenburg">Brandenburg</option>
+                        <option value="bremen">Bremen</option>
+                        <option value="hamburg">Hamburg</option>
+                        <option value="hessen">Hessen</option>
+                        <option value="niedersachsen">Niedersachsen</option>
+                        <option value="mecklenburg-vorpommern">Mecklenburg Vorpommern</option>
+                        <option value="nord-rhein-westfalen">Nord Rhein Westfalen</option>
+                        <option value="rheinland-pfalz">Rheinland Pfalz</option>
+                        <option value="saarland">Saarland</option>
+                        <option value="sachsen">Sachsen</option>
+                        <option value="sachsen-anhalt">Sachsen Anhalt</option>
+                        <option value="schleswig-holstein">Schleswig Holstein</option>
+                        <option value="thueringen">Thüringen</option>
+                    </select>
                 </div>
                 <div class="label">
-                <label for="user_zip_code">Zip Code</label>
-                <input class="inpt-field" type="text" name="zip_code" id="user_zip_code">
+                    <label for="user_zip_code">Zip Code</label>
+                    <input class="inpt-field" type="text" name="zip_code" id="user_zip_code">
                 </div>
             </div>
         </fieldset>
@@ -71,33 +71,38 @@
         <fieldset>
             <div class="container1">
                 <div class="select-header">
-                <h2>Newsletter</h2>
-                <p>Select the newsletter you would like to receive</p>
+                    <h2>Newsletter</h2>
+                    <p>Select the newsletter you would like to receive</p>
                 </div>
-                <input type="checkbox" name="news_select" id="html_news" value="html_news">
-                    <label for="news_select">HTML News</label>
-                <input type="checkbox" name="news_select" id="css_news" value="css_news">
-                
-                    <label for="css_news">CSS News</label>
-                <input type="checkbox" name="news_select" id="js_news" value="js_news">
-               
-                    <label for="js_news">JavaScript News</label>
-               
+                <div class="box">
+                    <input type="checkbox" name="news_select" id="html_news" value="html_news"><br>
+                    <label class="box-label" for="news_select">HTML News</label>
+                </div>
+                <div class="box">
+                    <input type="checkbox" name="news_select" id="css_news" value="css_news"><br>
+                    <label class="box-label" for="css_news">CSS News</label>
+                </div>
+                <div class="box">
+                    <input type="checkbox" name="news_select" id="js_news" value="js_news"><br>
+                    <label class="box-label" for="js_news">JavaScript News</label>
+                </div>
                 <div class="format">
-                <p>Newsletter format</p>
+                    <p>Newsletter format</p>
                 </div>
-                <input type="radio" name="select_type" id="html" value="html">
-               
-                
-                    <label for="html">HTML</label>
-                <input type="radio" name="select_type" id="plain_text" value="plain_text">
-                    <label for="plain_text">Plain text</label>
+                <div class="box">
+                    <input type="radio" name="select_type" id="html" value="html"><br>
+                    <label class="box-label" for="html">HTML</label>
+                </div>
+                <div class="box">
+                    <input type="radio" name="select_type" id="plain_text" value="plain_text"><br>
+                    <label class="box-label" for="plain_text">Plain text</label>
+                </div>
                 <div class="textarea">
-                <p>Other topics you like to hear about</p>
-                <textarea name="message"></textarea>
+                    <p>Other topics you like to hear about</p>
+                    <textarea name="message"></textarea>
                 </div>
                 <div class="btn">
-                <input type="submit" name="signup" id="user_signup" value="Signup">
+                    <input type="submit" name="signup" id="user_signup" value="Signup">
                 </div>
             </div>
         </fieldset>
