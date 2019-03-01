@@ -1,11 +1,15 @@
+
 * {
     box-sizing: border-box;
     font-family: ubuntu, noto sans, san serif;
 }
 
 body {
-    background: #e1e7ee;
     width: 100%;
+    margin: 0 auto;
+    background: #e1e7ee;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 p {
@@ -13,16 +17,16 @@ p {
     color: #83da8a;
 }
 
-fieldset {
-    border: none;
-}
-
 h1,
-h2,
-legend {
+h2 {
     color: #888888;
 }
 
+legend {
+    display: none;
+}
+
+body,
 .main-footer,
 .intp-field,
 .label,
@@ -36,8 +40,18 @@ legend {
     margin-bottom: 20px;
 }
 
+#fieldset_1,
+#fieldset_2 {
+    margin: 20px 20px;
+    border: none;
+}
+
+#fieldset_2 {
+    border-top: solid 2px black;
+}
+
 .label {
-    margin: 20px;
+    margin: 20px 0;
     flex-direction: column;
     justify-content: space-between;
 }
@@ -46,11 +60,25 @@ legend {
     border: none;
     border-radius: 8px;
     box-shadow: 2px 3px 5px rgba(3,3,3,15);
+    height: 3rem;
+    text-indent: 10%;
 }
 
 .inpt-field:focus {
     outline: none;
     border: solid 3px #83da8a;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 10%;
+    text-overflow: '';
+}
+
+#user_zip_code {
+    width: 30%;
+    text-indent: 30%;
 }
 
 .box {
@@ -75,6 +103,24 @@ legend {
     border-color: #83da8a;
 }
 
+#text-field {
+    border-radius: 8px;
+}
+
+.btn {
+    border: none;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background: #83da8a;
+    border-radius: 8px;
+    height: 50px;
+    width: 100%;
+}
+
+.btn:hover {
+    border: solid 3px #909090;
+}
+
 .main-footer {
     background: darkslategrey;
     color:#83da8a;  
@@ -83,5 +129,34 @@ legend {
     padding: 20px 0;
 }
 
-@media (min-width: 768px )
+@media (min-width: 768px ) {
+
+   .container {
+        width: 80%;
+        max-width: 1024px;
+        margin: 0 auto;
+   }
+
+   label {
+        width: 30%;
+        align-self: center;
+   }
+
+   #zip {
+        width: 26%;
+   }
+
+   .label {
+        justify-content: flex-start;
+        flex-direction: row;
+        margin: 20px 0;
+       
+   }
+
+   .inpt-field {
+        height: 3rem;
+        width: 85%;
+   }
+
+}
 

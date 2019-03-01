@@ -16,8 +16,9 @@
 </header>
 <main class="main-content">
     <form class="main-form" action="index.html" method="POST">
-        <fieldset>
+        <fieldset id="fieldset_1">
             <div class="container">
+                <h2>Contact Information</h2>
                 <legend>Contact Information</legend>
                 <div class="label">
                     <label for="user_name">Full Name</label>
@@ -62,16 +63,17 @@
                     </select>
                 </div>
                 <div class="label">
-                    <label for="user_zip_code">Zip Code</label>
+                    <label id="zip" for="user_zip_code">Zip Code</label>
                     <input class="inpt-field" type="text" name="zip_code" id="user_zip_code">
                 </div>
             </div>
         </fieldset>
         
        
-        <fieldset>
+        <fieldset id="fieldset_2">
             <div class="container">
                 <div class="select-header">
+                    <h2>Newsletter</h2>
                     <legend>Newsletter</legend>
                     <p>Select the newsletter you would like to receive</p>
                 </div>
@@ -100,11 +102,9 @@
                 </div>
                 <div class="textarea">
                     <p>Other topics you like to hear about</p>
-                    <textarea name="message"></textarea>
+                    <textarea name="message" id="text-field"></textarea>
                 </div>
-                <div class="btn">
-                    <input type="submit" name="signup" id="user_signup" value="Signup">
-                </div>
+                    <input class="btn" type="submit" name="signup" id="user_signup" value="Signup">
             </div>
         </fieldset>
         
