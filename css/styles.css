@@ -13,8 +13,8 @@ body {
 }
 
 p {
-    font-weight: 1.2em;
-    color: #64b64b;
+    font-size: 1em;
+    color: rgb(156, 154, 118);
 }
 
 h1,
@@ -37,17 +37,19 @@ body,
 .main-header {
     text-align: center;
     border-bottom: solid 4px black;
-    margin-bottom: 20px;
 }
 
 #fieldset_1,
 #fieldset_2 {
-    margin: 20px 20px;
+    background: #cec6c6;
+    width: 80%;
+    margin: 0 auto;
     border: none;
 }
 
 #fieldset_2 {
     border-top: solid 2px black;
+    
 }
 
 .label {
@@ -82,10 +84,18 @@ body,
 }
 
 select {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    text-overflow: '';
+    /* -webkit-appearance: none;
+    -moz-appearance: none; */
 }
+
+select option[value=""] {
+    color: lightgrey;
+}
+
+option:first-child {
+    display: none;
+}
+
 
 #user_zip_code {
     width: 30%;
@@ -95,8 +105,6 @@ select {
 .box {
     padding: 5px 0;
     flex-basis: 50px;
-    justify-content: baseline;
-  
 }
 
 .box-label {

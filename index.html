@@ -17,9 +17,9 @@
 <main class="main-content">
     <form class="main-form" action="index.html" method="POST">
         <fieldset id="fieldset_1">
+            <legend>Contact Information</legend>
             <div class="container">
                 <h2>Contact Information</h2>
-                <legend>Contact Information</legend>
                 <div class="label">
                     <label for="user_name">Full Name</label>
                     <input class="inpt-field" type="text" name="full_name" id="user_name" placeholder="required" required>
@@ -34,16 +34,16 @@
                 </div>
                 <div class="label">
                     <label for="user_str_address">Street Address</label>
-                    <input class="inpt-field" type="text" name="address" id="user_str_address">
+                    <input class="inpt-field" type="text" name="address" id="user_str_address" placeholder="required" required>
                 </div>
                 <div class="label">
                     <label for="user_city">City</label>
-                    <input class="inpt-field" type="text" name="city" id="user_city">
+                    <input class="inpt-field" type="text" name="city" id="user_city" placeholder="required" required>
                 </div>
                 <div class="label">
                     <label for="user_state">State</label>
-                    <select class="inpt-field" name="state" id="user_state">  
-                        <option selected="selected">Choose State</option>
+                    <select class="inpt-field" name="state" id="user_state" required="">  
+                        <option value="" selected disabled hidden>Choose State</option>
                         <option value="baden-wuerttenberg">Baden Württenberg</option>
                         <option value="bayern">Bayern</option>
                         <option value="berlin">Berlin</option>
@@ -71,15 +71,15 @@
         
        
         <fieldset id="fieldset_2">
+            <legend>Newsletter</legend>
             <div class="container">
                 <div class="select-header">
                     <h2>Newsletter</h2>
-                    <legend>Newsletter</legend>
                     <p>Select the newsletter you would like to receive</p>
                 </div>
                 <div class="box">
                     <input class="c-box" type="checkbox" name="news_select" id="html_news" value="html_news"><br>
-                    <label class="box-label" for="news_select">HTML News</label>
+                    <label class="box-label" for="html_news">HTML News</label>
                 </div>
                 <div class="box">
                     <input class="c-box" type="checkbox" name="news_select" id="css_news" value="css_news"><br>
@@ -112,7 +112,7 @@
     </form>
 </main>
 <footer class="main-footer">
-<copyright><small>&#169;copyright Elias Guderian</small></copyright>
+<p><small>&#169;copyright Elias Guderian</small></p>
 </footer>
 </body>
 </html>
