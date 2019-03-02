@@ -20,7 +20,7 @@ p {
 h1,
 h2 {
     color: #07889b;
-    padding: 10px;
+    padding: 10px 0;
 }
 
 legend {
@@ -37,7 +37,6 @@ body,
 
 .main-header {
     text-align: center;
-    /* border-bottom: solid 4px black; */
     background: darkslategray;
 }
 
@@ -77,7 +76,7 @@ body,
 }
 
 .inpt-field:hover {
-    background: #e7a849;
+    background: #83da8a;
 }
 
 .inpt-field:focus {
@@ -88,10 +87,6 @@ body,
 select {
     -webkit-appearance: none;
     -moz-appearance: none;
-}
-
-select option[value=""] {
-    color: lightgrey;
 }
 
 option:first-child {
@@ -116,12 +111,7 @@ option:first-child {
 
 .c-box,
 .r-box {
-  margin-top: 2.5px;
-}
-
-.c-box,
-.r-box:hover {
-    border-color: #83da8a;
+  margin: auto 0;
 }
 
 #text-field {
