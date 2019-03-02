@@ -97,6 +97,10 @@ body,
         -moz-appearance: none;
     }
 
+    select option[value=""] {
+        color: lightgray;
+    }
+
     option:first-child {
         display: none;
     }
