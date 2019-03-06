@@ -100,6 +100,16 @@ body,
 
     ::placeholder {
         color: lightgray;
+        text-align: left;
+    }
+
+    #user_name::placeholder {
+        color: lightgray;
+        text-align: right;
+    }
+
+    #user_email::placeholder  {
+        color: lightgray;
         text-align: right;
     }
 
