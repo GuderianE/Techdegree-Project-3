@@ -22,6 +22,10 @@ p,
     color: #83da8a;
 }
 
+h2 {
+    color: white;
+}
+
 h1,
 h2,
 legend {
@@ -44,7 +48,7 @@ legend {
     font-size: 1.5em;
     font-weight: bold;
     position:absolute;
-    top: 1070px;
+    top: 1140px;
     left: 0;
 }
 
@@ -97,6 +101,7 @@ body,
         justify-content: flex-end;
         padding-right: 20px;
         transition-duration: 500ms;
+        margin-top: 10px;
     }
 
     ::placeholder {
