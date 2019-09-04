@@ -29,6 +29,7 @@ h2 {
 h1,
 h2 {
     color: #07889b;
+    padding: 10px;
 }
 
 #title-1,
@@ -63,6 +64,7 @@ form {
 
 .main-header {
     text-align: center;
+    /* border-bottom: solid 4px black; */
     background: darkslategray;
 }
 
@@ -117,7 +119,7 @@ form {
 }
 
 .inpt-field:hover {
-    background: #83da8a;
+    background: #e7a849;
 }
 
 .inpt-field:focus {
@@ -128,6 +130,10 @@ form {
 select {
     -webkit-appearance: none;
     -moz-appearance: none;
+}
+
+select option[value=""] {
+    color: lightgrey;
 }
 
 option:first-child {
@@ -152,11 +158,12 @@ option:first-child {
 
 .c-box,
 .r-box {
-    margin: auto 0;
+  margin-top: 2.5px;
 }
 
-.textarea {
-    margin-top: 16px;
+.c-box,
+.r-box:hover {
+    border-color: #83da8a;
 }
 
 #text-field {
